@@ -1,23 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
-   <table>
-    <tr>
-        <td>1</td>
-        <td>2</td>
-        <td>3</td>
-    </tr>
-    <tr>
-        <td>4</td>
-        <td>5</td>
-        <td>6</td>
-    </tr>
-   </table> 
-</body>
+    <style>
+      table,
+      th,
+      td {
+        border: 1px solid #ccc;
+        border-collapse: collapse;
+      }
+      th,
+      td {
+        padding: 10px 20px;
+      }
+    </style>
+  </head>
+  <body style="background-color: rgb(188, 188, 239)">
+    <hr />
+    <h1>헤드라인</h1>
+    <h2>날씨</h2>
+    <table>
+      <tr>
+        <th>종아</th>
+        <td>나가기 좋은 날씨</td>
+      </tr>
+
+      <tr>
+        <th>바람 중</th>
+        <td>씨티 여행할 때 황사 마스크 준비하세요</td>
+      </tr>
+
+      <tr>
+        <th>공기 양호</th>
+        <td>바다 여행 추천!!</td>
+      </tr>
+    </table>
+    <hr />
+
+    <hr />
+    <form action="">
+      <fieldset>
+        <legend>좋아하는 여행 선택하세요</legend>
+        <select name="여행" id="여행">
+          <optgroup label="선택하세요">
+            <option value="씨티 여행">씨티여행</option>
+            <option value="바다 여행">바다여행</option>
+          </optgroup>
+        </select>
+        <select name="비용" id="비용">
+          <optgroup label="선택하세요">
+            <option value="100만 원 이상">100만 원 이상</option>
+            <option value="100만 원 이하 50만 원 이상">
+              100만 원 이하 50만 원 이상
+            </option>
+            <option value="50만 원 이하">50만 원 이하</option>
+          </optgroup>
+        </select>
+
+        <ul>
+          <li>
+            <input type="radio" name="여행" id="씨티 여행" value="씨티 여행" />
+            <label for="씨티 여행">씨티 여행</label>
+          </li>
+
+          <li>
+            <input type="radio" name="여행" id="바다 여행" value="바다 여행" />
+            <label for="바다 여행">바다 여행</label>
+          </li>
+        </ul>
+
+        <ul>
+          <li>
+            <input
+              type="checkbox"
+              name="비용"
+              id="100만 원 이상"
+              value="100만 원 이상"
+            />
+            <label for="100만 원 이상">100만 원 이상</label>
+          </li>
+
+          <li>
+            <input
+              type="checkbox"
+              name="비용"
+              id="100만 원 이하 50만 원 이상"
+            />
+            <label for="100만 원 이하 50만 원 이상"
+              >100만 원 이하 50만 원 이상</label
+            >
+          </li>
+
+          <li>
+            <input
+              type="checkbox"
+              name="비용"
+              id="50만 원 이하"
+              value="50만 원 이하"
+            />
+            <label for="50만 원 이하">50만 원 이하</label>
+          </li>
+        </ul>
+        <button
+          type="submit"
+          style="background-color: rgb(142, 137, 137)"
+          autofocus
+          aria-placeholder="꼭 정확히 선택하세요"
+        >
+          확인
+        </button>
+      </fieldset>
+    </form>
+    <hr />
+  </body>
 </html>
