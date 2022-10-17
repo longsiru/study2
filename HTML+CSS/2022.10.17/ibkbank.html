@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        ul {list-style: none;}
+
+        header, footer, section {
+            box-sizing:border-box;
+        }
+
+        .wrap {
+            background: white;
+        }
+
+
+        .header {
+        }
+
+        .header-nav {
+            width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: row;
+            background: mediumturquoise;
+        }
+
+        .header-nav > h1 {
+            background: hotpink;
+            width: 200px;
+            height: 50px;
+        }
+
+        .header-nav .menu {
+            width: calc(100% - 200px);  
+        }
+
+        .header-nav .menu > nav > ul {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+        }
+
+
+
+
+
+    .button {
+        width: 100%;
+        height: 80px;
+        display: inline-block;
+        background: gray;
+
+    }
+
+    .button .sign-button {
+        width: 80px;
+        height: 20px;
+        
+    }
+    
+    .button .serve-button {
+        width: 80px;
+        height: 20px;
+        
+    }
+
+
+    .serve-menu ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    
+
+    .slide {
+        width: 100%;
+        height: 50px;
+        background: peachpuff;
+    }
+
+    .serve-menu {
+        width: 100%;
+        height: 50px;
+        background: plum;
+    }
+
+    .serve-menu > ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+
+    }
+
+    .slide-a {
+        width: 100%;
+        height: 50px;
+        background: peachpuff;
+    }
+
+
+    .board {
+        width: 100%;
+        height: 500px;
+        background: papayawhip;
+    }
+
+
+
+
+
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="header-nav">
+            <h1>IBK기업은행</h1>
+            <div class="menu">
+                <nav>
+                    <ul>
+                        <li>개인뱅킹</li>
+                        <li>기업뱅킹</li>
+                        <li>금융상품</li>
+                        <li>금융서비스</li>
+                        <li>금융정보</li>
+                        <li>키드</li>
+                        <li>전체메뉴<select name="select" id="select">
+                            <option value=""></option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                        </select></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <main class="wrap">
+        <section class="button">
+            <button class="sign-button">뱅킹로그인</button>
+            <button class="serve-button">인증센터</button>
+        </section>
+        <section class="slide"></section>
+        <section class="serve-menu">
+            <div>
+                <ul>
+                    <li>계좌조회</li>
+                    <li>키드조회</li>
+                    <li>카드등록</li>
+                    <li>환유조회</li>
+                    <li>소비자포털/민원</li>
+                    <li>상품공시실/약관</li>
+                    <li>서민금융</li>
+                    <li>IBK부동산 매물광장</li>
+                </ul>
+            </div>
+        </section>
+        <section class="slide-a"></section>
+        <section class="board">
+            <div class="cube">
+                <h1>IBK 큐브</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut alias laboriosam numquam quod inventore nihil necessitatibus reiciendis fugit. Eius aliquam ipsa rem dolore iure nobis perferendis vitae, laborum recusandae nemo.</p>
+            </div>
+            <div class="talk">
+                <h1>금융정보톡</h1>
+            </div>
+            <div class="news">
+                <h1>새소식</h1>
+            </div>
+            <div class="notice">
+                <h1>공지</h1>
+            </div>
+            <div class="find">
+                <ul>
+                    <li>지급보증서발급조회</li>
+                    <li>잔액증명서발급조회</li>
+                    <li>이용시간</li>
+                    <li>수수료안내</li>
+                    <li>전자민원접수</li>
+                    <li>이메일상담</li>
+                    <li>IBK퇴직연금</li>
+                    <li>IBK BOX POS</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+    <footer class="footer"></footer>
+</body>
+</html>

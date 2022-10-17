@@ -22,26 +22,24 @@
 
         /* 0~766px */
 
+        .header {
+
+        }
+
         .header__nav {
             max-width: 1200px;
             background: #9de;
             margin: 0 auto;
             display: flex;
             flex-direction: row;
-
         }
 
 
         .header__nav > h1 {
             width: 100px;
             height: 120px;
+            background:#9de25c;
 
-        }
-
-        .header__nav > nav {
-            width: calc(100%-100px);
-            background: #ffd;
-            height: 120px;
         }
 
         .header__nav > nav > ul {
@@ -142,13 +140,34 @@
            text-align: center;
         }
 
+        .banner {
+            height: 200px;
+
+        }
 
 
+        .banner__content {
+            background: gray;
 
+        }
+
+        .footer {
+            height: 680px;
+            background: black;
+        }
 
 
 
         /* 767~1023px */
+        @media all and (min-width: 767px) {
+            .guide__content {
+                flex-direction: row;
+            }
+
+            .store__content ul li {
+                width: 16066%;
+            }
+        }
         /* 1024px이상 */
 
 
