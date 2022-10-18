@@ -95,12 +95,6 @@
         background: plum;
     }
 
-    .serve-menu > ul {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-
-    }
 
     .slide-a {
         width: 100%;
@@ -113,12 +107,57 @@
         width: 100%;
         height: 500px;
         background: papayawhip;
+        overflow: hidden;
     }
 
-    .cube,
-    .talk {
-        width: 30%;
+    #cube {
+        width: 29%;
         height: 100px;
+        border: 1px solid black;
+        background: gray;
+    }
+    #talk{
+        width: 29%;
+        height: 100px;
+        border-bottom: 1px solid black;
+        border-right: 1px solid black;
+        border-left: 1px solid black;
+    }
+
+    #news {
+        width:70%;
+        height:80px;
+        border-top: 1px solid black;
+        border-right: 1px solid black;
+        
+    }
+
+    #notice {
+        width:70%;
+        height: 80px;
+        border-top: 1px solid black;
+        border-right: 1px solid black;
+         
+    }
+
+    #find {
+        width:70%;
+        height: 20px;
+        display: inline-block;
+        justify-content: center;
+        border-top: 1px solid black;
+        border-right: 1px solid black;
+        border-bottom: 1px solid black;
+    }
+
+    #find ul {
+        display: flex;
+        text-decoration: row;
+        justify-content: space-around;
+    }
+
+    .re {
+        float: right;
     }
 
 
@@ -134,12 +173,12 @@
             <div class="menu">
                 <nav>
                     <ul>
-                        <li>개인뱅킹</li>
-                        <li>기업뱅킹</li>
-                        <li>금융상품</li>
-                        <li>금융서비스</li>
-                        <li>금융정보</li>
-                        <li>키드</li>
+                        <li><a href="#">개인뱅킹</a></li>
+                        <li><a href="#">기업뱅킹</a></li>
+                        <li><a href="#">금융상품</a></li>
+                        <li><a href="#">금융서비스</a></li>
+                        <li><a href="#">금융정보</a></li>
+                        <li><a href="#">카드</a></li>
                         <li>전체메뉴<select name="select" id="select">
                             <option value=""></option>
                             <option value="1">1</option>
@@ -174,23 +213,23 @@
         </section>
         <section class="slide-a"></section>
         <section class="board">
-            <div class="cube">
+            <div id="cube" class="le">
                 <h1>IBK 큐브</h1>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut alias laboriosam numquam quod inventore nihil necessitatibus reiciendis fugit. Eius aliquam ipsa rem dolore iure nobis perferendis vitae, laborum recusandae nemo.</p>
             </div>
-            <div class="talk">
+            <div id="talk" class="le">
                 <h1>금융정보톡</h1>
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat quaerat quos rerum iure corporis voluptatem aut, incidunt officiis, quod similique adipisci. Repellat, nemo facere. Ratione recusandae nihil eveniet tempore quaerat.</p>
             </div>
-            <div class="news">
+            <div id="news" class="re">
                 <h1>새소식</h1>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum unde adipisci nisi ipsum, iste quis praesentium, molestias illum quod quia ratione quas voluptates sit dolor atque, quaerat consequatur aut nam.</p>
             </div>
-            <div class="notice">
+            <div id="notice" class="re">
                 <h1>공지</h1>
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque veritatis libero quia ea facilis illo impedit dignissimos, praesentium tempore labore, alias dolore omnis ex explicabo recusandae nihil ad dicta officiis.</p>
             </div>
-            <div class="find">
+            <div id="find" class="re">
                 <ul>
                     <li>지급보증서발급조회</li>
                     <li>잔액증명서발급조회</li>
