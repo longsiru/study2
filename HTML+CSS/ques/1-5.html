@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        var sub = prompt("과목", "");
+        var cod;
+
+        switch(sub) {
+            case "수학": cod = "01";
+            break ; 
+            case "영어": cod = "02";
+            break ; 
+            case "국어": cod = "03";
+            break ; 
+            case "국사": cod = "04";
+            break ; 
+            default:cod = "00";
+            break ; 
+        }
+        document.write("과코" + cod);
+    </script>
+</body>
+</html>

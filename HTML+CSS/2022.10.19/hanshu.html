@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        // //1.함수 정의
+        // function sum(a, b) {  //下面写了sum(1, 2),所以这里a=1，b=2。
+        //     let sum = a + b;
+        //     console.log(sum);
+        // }
+
+        // //1.함수 실행
+        // sum(1, 2)  //3
+        // sum(3, 4)   //7
+        // sum(10, 10)//20
+
+
+
+        
+        // //2.함수 정의
+        // const sum = function(a, b) {
+        //     let sum = a + b;
+        //     console.log(sum);
+        // }
+
+        //  //2.함수 실행
+        // sum(1, 2)  //3
+        // sum(3, 4)   //7
+        // sum(10, 10)//20
+
+
+
+
+        //3.함수 정의 es6
+        // const sum = (a, b) => {
+        //     let sum = a + b;
+        //     console.log(sum);
+        // }
+
+        // //3.함수 실행
+        // sum(1, 2)  //3
+        // sum(3, 4)   //7
+        // sum(10, 10)//20
+
+        // const sum2 = (a) => { //只有一个值的时候可以不加括号。
+        //     let sum = a;
+        //     console.log(sum);
+        // }
+
+        // sum2(1)  //1
+
+
+
+        //   3.함수 정의 (es6, 화살표 함수)
+        // const sum = (a, b) =>  a + b;  
+        //화살표 함수: 리턴만 해주면 중괄호, return문을 생략할 수 있다.
+
+      
+
+
+
+
+        // const sum2 = (a) => { //只有一个值的时候可以不加括号。
+        //     let sum = a;
+        //     console.log(sum);
+        // }
+
+        // sum2(1)  //1
+
+
+
+
+        // function sum(a, b) {
+        //     let sum = a + b;
+        //     return sum;
+
+        //     //return문을 만나면 함수는 끝난다.
+        //     console.log("안녕하세요");
+        // }
+
+        // //1.함수 실행
+        // let result = sum(1, 2) 
+        // console.log(result);  //3
+
+        //1.
+        // function bmi(kg, m) {
+        //     let bmi = kg / (m * m);
+        //     console.log(bmi)
+        // }
+        // bmi(49, 1.6);
+
+
+
+        //2.
+        // const bmi = function(kg, m) {
+        //     let bmi = kg / (m * m);
+        //     console.log(bmi);
+        // }
+
+        // bmi(49, 1.6);
+
+
+        //3.
+        const bmi = (kg, m) => {
+            let bmi = kg / (m * m);
+            return bmi
+        }
+        let result = bmi(49, 1.6);
+        console.log(result);
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // while`，中文叫 当…时，其实就是当条件满足时就执行代码，一旦不满足了就不执行了
+        // while (条件) { 满足条件就执行 }
+
+
+        // let i = 0;
+        // const arr = [1, 2, 3, 4, 5]
+
+        // // while (i < arr.length) {
+        // //     console.log(`${i}: ${arr[i]}`);
+        // //     // i = i + 1;
+        // //     i++
+        // // }
+
+        // do {
+        //     console.log(`${i}`);
+        //     i++;
+        // } while (i < 10)
+
+
+
+        // for (let i = 0; true; i++) {
+        //     alert(i + "번째 반복문 입니다.")
+
+        //     const isContinue = confirm('계속하시겠습니까?')
+        //     // 확인: true;
+        //     //취소: false;
+
+        //     if (!isContinue) {
+        //         break;
+        //     }
+        // }
+
+        // alert('프로그램 종료')
+
+
+
+
+        // for (let i = 0; true; i++) {
+        //     alert(i + "번째 반복문 입니다.")
+
+
+        //     if (i === 2) {
+        //         break;
+        //     }
+        //     //*看见break的瞬间，下面的coding不实行，马上出反复文。
+        //     // 在while,do while,for里使用。
+        //     alert("안녕하세요")
+        // }
+
+        // alert('프로그램 종료')
+
+
+        // for (let i = 0; i < 5; i++) {
+        //     console.log(i + "번째 반복문 입니다.")
+
+
+        //     if (i === 2) {
+        //         continue;
+        //     }
+        //     //遇到continue的话，马上回到上面的反复文。
+        //     // 在while,do while,for里使用。
+        
+        //     console.log("안녕하세요")
+        // }
+
+
+
+        let output = '';
+
+        for (let i = 1; 1 < 10; i++) {
+            for(let j = 0; j < 7; j--) {
+                output += '*'
+            }
+            output += '\n'  //줄바꿈
+        }
+
+        console.log(output);
+      
+    </script>
+</body>
+</html>

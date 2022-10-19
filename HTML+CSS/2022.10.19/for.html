@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // for循环控制语句，大部分循环都会有一个计数器用以控制循环执行的次数，
+        // 计数器的三个关键操作是初始化、检测和更新。
+
+        // i++:i하나씩 증가
+        // for(let i = 0; i < 5; i++) {
+        //     console.log(i);
+        // }
+
+        // for(let i = 0; i > 5; i--) {
+        //     console.log(i);
+        // }   //一开始就是false所以不实行
+
+
+        // 输出10.9.8.7.6
+        // for(let i = 10; i > 5; i--) {
+        //     console.log(i);
+        // }   
+
+
+        // 输出0.2.4.6.8
+        // for(let i = 0; i < 10; i+=2) {
+        //     console.log(i);
+        // }
+
+
+        // let sum = 0
+        // for(let i = 0; i <= 100; i++) {
+        //     sum += i   // sum = sum+i  //从0到100合计
+        //     console.log(`sum: ${sum}`);
+        // }
+
+        // console.log(`최종 sum : ${sum}`);
+
+
+        //배열랑 for문은 짝공.
+        // const todos = ['우유 구매', '메일 확인', '헬스']
+
+        // for (let i = 0; i < todos.length; i++) {
+        //     console.log(`${i}번째 할인은 ${todos[i]}`)
+        // }
+
+        // const todos = ['우유 구매', '메일 확인', '헬스']
+        // for (let i = todos.length - 1; i >= 0; i--) {
+        //     console.log(`${i}번째 할인은 ${todos[i]}`)
+        // }
+
+
+        //  for in
+        const todos = ['우유 구매', '메일 확인', '헬스']
+
+        for (const i in todos) {
+            console.log(`${i}번째 할인은 ${todos[i]}`)
+        }
+
+        // for of
+        // const todos = ['우유 구매', '메일 확인', '헬스']
+
+        // for (const todo of todos) {
+        //     console.log(`오늘의 할인은 ${todo}`)
+        // }
+
+    </script>
+</body>
+</html>
