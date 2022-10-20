@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //최대
+        /* var arr= [1,2,3,4];
+        function min(arr){
+            var result = 0;
+            for (var i = 0; i < arr.length; i++){
+                if(arr[i] > result){
+                    result=arr[i];
+
+                }
+            }
+            return result 
+        }
+        console.log(min(arr)); */
+
+        //최소
+        /* function min(arr){
+            let result = arr[0];
+            for (var i = 0; i < arr.length; i++){
+                if(arr[i] < result){
+                    result=arr[i];
+
+                }
+            }
+            return result 
+        }
+        const testArr = [52, 273, 103, 275, 24, 57]
+        console.log(`최소값: ${min(testArr)}`); */
+
+
+        /* function min(array){
+            let output = array[0];
+            for (const item of array){
+                if(output > item){
+                    output = item;
+                }
+            }
+            return output 
+        }
+        const testArr = [52, 273, 103, 275, 24, 57];
+        console.log(`최소값: ${min(testArr)}`);
+        */
+
+        /* function min(...items){
+            console.log(items)
+
+            let output = items[0];
+            for (const item of items){
+                if(output > item){
+                    output = item;
+                }
+            }
+            return output 
+        }
+        const testArr = [52, 273, 103, 275, 24, 57];
+        console.log(`최소값: ${min(52, 273, 103, 275, 24, 57)}`); */
+
+
+
+        /* function min(first, ...rests){
+            let output
+            let itmss */
+
+            //매개변수이 자료형이 숫자인지 배열인지 판단
+            /* if (Array.isArray(first)){ //배열이면true, 그렇지않으면 false.
+                output = first[0]
+                items = first
+            } else if(typeof(first) === 'number'){ //숫자형 이라면
+                output = first
+                items = rests
+            }
+
+            for (const item of items){
+                if(output > item){
+                    output = item;
+                }
+            }
+            return output 
+        }
+        const testArr = [52, 273, 103, 275, 24, 57];
+        console.log(`최소값: ${min(testArr)}`); */
+
+
+        //2. spread operation(전개 연산자)
+       /*  function sample(...items) {
+            console.log(items);
+        }
+
+        const array = [1, 2, 3, 4];
+
+        console.log(`전개 연산자를 사용하지 않을때: ${sample(array)}`);
+        console.log(`전개 연산자를 사용할때: ${sample(...array)}`); */
+
+
+        //3. 기본 매개변수
+        /* function earnings(name, wage=9000, hours=40) {
+            console.log(`${name}의 급여 정보`);
+            console.log(`시급: ${wage}`);
+            console.log(`근무시간: ${wage * hours}`);
+            console.log(`급여: ${wage * hours}원`);
+            console.log(`===`);
+        }
+
+        earnings("구름");
+        earnings("별", 10000);
+        earnings("달", 10000, 52);
+         */
+
+
+
+
+
+         //4. 구버전 자바스크립트에서 매개변수 구하기(참고)
+         /* function sample() {
+            console.log(arguments)
+
+
+            for(let i = 1; i < arguments.length; i++)
+            console.log(`${i}번째: ${arguments[i]}`)
+         }
+ 
+         sample(1,2);
+        sample(1,2,3);
+        sample(1,2,3,4) */
+
+
+
+
+         function earnings(name, wage=9000, hours=40) {
+            console.log(`${name}의 급여 정보`);
+            console.log(`시급: ${wage}`);
+            console.log(`근무시간: ${wage * hours}`);
+            console.log(`급여: ${wage * hours}원`);
+            console.log(`===`);
+        }
+
+        earnings("구름");
+        earnings("별", 10000);
+        earnings("달", 10000, 52);
+        
+
+
+
+
+    </script>
+</body>
+</html>
