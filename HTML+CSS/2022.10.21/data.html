@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const f = new Number(273.5252525252)
+        console.log(f.toFixed(2))
+
+
+         //创建一个date对象
+        //如果直接使用构造函数创造一个date对象，则会封装为当前代码的执行时间。
+        const d = new Date() 
+        console.log(d)
+        console.log(d.getDay())
+
+        //创建一个指定的时间
+        //需要在构造函数中传递一个表达时间的字符串作为参数。
+        var d2 = new Date("12/03/2016 11:10:30") //日期的格式：月/年/日 时：分：秒
+        console.log(d2)
+
+
+        const s = new String("안녕하세요")
+        console.log(s)
+
+
+
+        const b = new Boolean(false)
+        console.log(b)
+
+
+        let str = "    the, orange, teat, haha    ";
+        let str1 = "this";
+        let str2 = "Apple Dog Food ";
+        let num = 1.333;
+        let bool = false;
+        console.log(num.toFixed(2));
+
+        for (let i = 0; i < str.length; i++){
+            console.log(str[i]);
+        }
+
+        // const word = str.split('');
+        // const word = str.split();
+        // const word = str.split('');
+        // const word = str.split(',', 2 );
+        // const word = str.trim()  //删掉两边的空格。
+        // const word = str1.concat('=', str2) //连接str1=str2
+        // const word = str2.slice(1,3);
+        // const word = str2.indexOf('dog');  //找dog在的位置/从零开始第六个显示6
+
+        // const word = str2.indexOf('flower'); 
+        // if(word === -1){
+        //     alert("찾는 문자가 없습니다")
+        // }
+
+        // const word = str2.substring(1,3); //substring() 方法用于提取字符串中介于两个指定下标之间的字符
+                                           //substr() 方法可在字符串中抽取从 start 下标开始的指定数目的字符
+        
+        const word = str2.toLocaleLowerCase(); //把字符串换成小写。
+
+        console.log(word)
+        
+
+
+    </script>
+</body>
+</html>

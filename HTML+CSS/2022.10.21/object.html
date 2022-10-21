@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //배열, 객체 데이터(JSON)
+        /* const product = {
+            name:'건조망고',
+            type:'당절임',
+            weight:3,
+            arr: [1 ,2 ,3]
+        }
+
+        console.log(product);  //putout all data
+
+        // 개별 데이터 보기
+        console.log(product.type); //only type
+        console.log(product.arr);  //only arr
+
+        //배열 바꾸기
+        product.name = '바나나';
+        console.log(product);
+
+
+        //배열 꺼내오기
+        const result = product.arr;
+        console.log(result[1]);
+
+        //데이터 추가
+        product.date = '2022/10/21';
+        console.log(product);
+
+        //데이터 삭제
+        delete product.weight;
+        console.log(product);*/
+
+        // 변수를 선언합니다.
+      // 1. 리타럴 방삭
+      //객체 = 속성(소펙)+ 메소드(함수)
+
+
+     /*  const pet = {
+        name: '구름',
+        eat: function () { 
+         console.log('구름이가 밥을 먹습니다.');
+        }
+      }
+      // 메소드를 호출합니다.
+      console.log(pet.name);
+     */
+
+
+    /*  const pet = {
+        name: '구름',  //一定要写逗号
+        age: '2',
+        lineage: 'bule', */
+
+        //1.1function形式
+        /* eat: function (food) { 
+         console.log(`구름이가 ${food}을 먹습니다.`);
+        },  //一定要写逗号
+        sleep: function(where){    //sleep는 함수 , where는 매개변수.
+          console.log(`구름이가 ${where}에서 자요.`);
+        } */
+
+
+        //1.2."=>"形式
+        /* eat: (food) => {
+          console.log(`구름이가 ${food}을 먹습니다.`);
+        },
+        sleep: (where) => {
+          console.log (`구름이가 ${where}에서 자요.`);
+        }
+      }
+
+      // 메소드를 호출합니다.
+      console.log(pet.name);
+      console.log(pet.age);
+      console.log(pet.lineage);
+      pet.eat('밥');
+      pet.sleep("의자")
+ */
+
+
+      
+
+      /* const pet = {
+        name: '구름',
+        eat: function (food) { 
+         console.log(`구름이가 ${food}을 먹습니다.`);
+        }
+      }
+      // 메소드를 호출합니다.
+      console.log(pet.name);
+      pet.eat('밥'); */
+    
+      
+
+
+      /* const pet = {
+        name: '구름',
+        eat: function (food) { 
+          alert(this.name + '은/는 ' + food + '을/를 먹습니다.')
+        }
+      }
+
+      // 메소드를 호출합니다.
+      pet.eat('밥')*/
+
+
+
+
+      // 2. 객체 생성자 방삭
+      // 객체 = 속성 + 메소드(함수)
+      function Pet(nameVal, ageVal, lineageVal){
+        // 속성
+        this.name = nameVal  //this: 현재 있는 객체를 가르킨다.
+        this.age = ageVal
+        this.lineage = lineageVal
+        //메소드
+        this.eat = function(food){
+          console.log(`${this.name}이가 ${food}을 먹습니다.`);
+        }
+        this.agePrint = function(){  //age의 함수.
+          console.log(`${this.name}의 나이는 ${this.age}입니다.`)
+        }
+        this.lineagePrint = function(){
+          console.log(`${this.name}의 종류는 ${this.lineage}입니다.`)
+        }
+      }
+
+      //객체 생성
+      //이용한는 이유:코드의 생산성이 높아져.
+      const pet = new Pet('구름', 5, 'bule');  //객체 안네 있는 것 가져다 쓸 수 있다. 不是一样的New pet
+      const pet2 = new Pet('별', 10, 'cheese');  //별은 pet2의 매개변수.
+      const pet3 = new Pet('달', 7, 'short');
+      const pet4 = new Pet('해', 9, 'siam');
+
+
+      //객체가 생성하는 순간 속성에 값이 할당된다.
+      pet.eat('밥');  //实行的话，名字变了，为什么变了呢？ pet2，new pet生成的瞬间，属性的值就할당.
+      pet2.eat('밥');
+      pet3.eat('밥');
+      pet4.eat('밥');
+
+      pet.agePrint();  //实行的话，名字变了，为什么变了呢？ pet2，new pet生成的瞬间，属性的值就할당.
+      pet2.agePrint();
+      pet3.agePrint();
+      pet4.agePrint();
+
+      pet.lineagePrint();  //实行的话，名字变了，为什么变了呢？ pet2，new pet生成的瞬间，属性的值就할당.
+      pet2.lineagePrint();
+      pet3.lineagePrint();
+      pet4.lineagePrint();
+
+
+      console.log(pet.name);
+
+
+
+    </script>
+</body>
+</html>

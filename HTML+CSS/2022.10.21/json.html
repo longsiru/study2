@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        //객체데이터
+        /* const product = {
+            name:'건조망고',
+            type:'당절임',
+            weight:3,
+            arr: ['안' ,'녕' ,'하']
+        }
+
+        const product2 = [{
+            name:'건조바나나',
+            type:'바나나절임',
+            weight:2,
+        }, {
+            name:'건조망고',
+            type:'망고절임',
+            weight:3,
+        }]
+
+        const product3 = '{"result": true, "const" : 42}';
+        const obj = JSON.parse(product3);  //JSON.parse 方法用来解析 JSON 字符串，构造由字符串描述的值或对象
+        console.log(obj);
+
+        console.log(JSON.stringify(product2));  //JSON.stringify 方法是将一个对象或值转换为 JSON 字符串.
+        console.log(product2[0]);
+        console.log(product2[1]);
+         */
+
+        /* 1. JSON.parse :
+        JSON.parse方法用来解析 JSON 字符串，构造由字符串描述的 JavaScript 值或对象。
+        该方法有两个参数：第一个参数是需要解析处理的 JSON 字符串，
+        第二个参数是可选参数提供可选的 reviver 函数，用在返回之前对所得到的对象执行变换操作。 */
+        /* const json = '{"result":true, "count":2}';
+        const obj = JSON.parse(json);
+        console.log(obj.count); */
+        // 2
+        // console.log(obj.result);
+        // true
+        /* 带第二个参数的情况 */
+        // JSON.parse('{"p": 5}', function (k, v) {
+            // if(k === '') return v;     // 如果k不是空，
+            // return v * 2;              // 就将属性值变为原来的2倍返回
+        // });                            // { p: 10 }
+        /* 上面的代码说明了，我们可以将一个符合 JSON 格式的字符串转化成对象返回；
+           带第二个参数的情况，可以将待处理的字符串进行一定的操作处理，
+           比如上面这个例子就是将属性值乘以 2 进行返回。 */
+
+
+        /* 2. Json.stringify:
+              JSON.stringify 方法是将一个 JavaScript 对象或值转换为 JSON 字符串，默认该方法其实有三个参数：
+              第一个参数是必选，后面两个是可选参数非必选。第一个参数传入的是要转换的对象；
+              第二个是一个 replacer 函数，比如指定的 replacer 是数组，则可选择性地仅处理包含数组指定的属性；
+              第三个参数用来控制结果字符串里面的间距，后面两个参数整体用得比较少 */
+
+
+
+              JSON.stringify({ x: 1, y: 2 });
+              // "{"x":1,"y":2}"
+              JSON.stringify({ x: [10, undefined, function(){}, Symbol('')] })
+              // "{"x":[10,null,null,null]}"
+              
+              
+              /* 第二个参数的例子 */
+              function replacer(key, value) {  /* 增加第二个参数 replacer 带来的变化：通过替换方法把对象中的属性为字符串的过滤掉，
+              在 stringify 之后返回的仅为数字的属性变成字符串之后的结果； */
+                       if (typeof value === "string") {
+                             return undefined; //值为undefined的任何属性也会被跳过。最终得到的就是所有实例属性均为有效JSON数据类型的表示。
+                        }
+                    return value;
+                }
+
+              var foo = {foundation: "Mozilla", model: "box", week: 4, transport: "car", month: 7};
+              var jsonString = JSON.stringify(foo, replacer);
+              console.log(jsonString);
+               // "{"week":4,"month":7}"
+              
+               /* 第三个参数的例子 */
+              JSON.stringify({ a: 2 }, null, " ");//当第三个参数传入的是多个空格的时候，则会增加结果字符串里面的间距数量，从最后一段代码中可以看到结果。
+              
+              /* "{
+              "a": 2
+              }"*/
+              JSON.stringify({ a: 2 }, null, "");
+              // "{"a":2}"
+
+              
+
+ 
+
+
+
+    </script>
+</body>
+</html>
