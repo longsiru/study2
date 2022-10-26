@@ -194,7 +194,7 @@
 	flex-direction: row;
 	justify-content:space-between;
 	max-width: 1140px;
-	margin: 0 auto;
+	margin: 60px auto 0;
 	padding: 35px 30px;
 	border-bottom: 1px solid;
 }
@@ -310,6 +310,7 @@
 	
 	.header__nav > .menu > .delivery-order {
 		width: 168px;
+		/* unset: 원래 디플트 값으로 돌아오게 한다. */
 		text-align: unset;
 	}
 	
@@ -325,6 +326,7 @@
 
 	.header__nav > .menu .main__list .list__drop {
 		display: none;
+		/* absolute:relative를 기준으로 자기 위지를 잡는다. */
 		position: absolute;
 		top: 60px;
 		width: 232px;
