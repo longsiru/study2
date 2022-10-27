@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .auqa{background-color: aqua;}
+        .red{background-color: red;}
+        .green{background-color: green;}
+        .yellow{background-color: yellow;}
+        
+    </style>
+</head>
+<body>
+    <ul class="wrap">
+        <li class="list_1">
+            <span class="child">1번</span>
+            <span>2번</span>
+            <span class="child3">3번</span>
+            <span>4번</span>
+            <span class="child5">5번</span>
+        </li>
+        <li class="list_2">리스트2</li>
+        <li class="list_3">리스트3</li>
+    </ul>
+    <a href="https://www.naver.com/" target="_blank">클릭</a>
+    <p  class="red">안녕하세요.안녕하세요.</p>
+
+    <script src="./jquery-3.6.1.min.js"></script>
+    <script>
+    $(function(){
+
+        // $("p").addClass("aqua")
+        // $("p").removeClass("red")
+        // $("p").toggleClass("green")
+        console.log($("p").hasClass("green"))
+
+
+       /*  var result1 = $(".list_1").html();
+        console.log(result1)
+        $(".list_1").html("<a href='#'>클릭</a>") */
+
+        /* var result1 = $(".list_1").text();
+        console.log(result1)
+        $(".list_1").text("<a href='#'>클릭</a>") */
+
+        // console.log($("a").attr("href"))
+        /* console.log($("a").attr("target"))  //_blank+
+        $("a").attr({
+            "href": "https://ww.ezenac.co.kr/",
+            "target":"_parent"
+        }) */
+        
+    })
+    </script>
+</body>
+</html>
