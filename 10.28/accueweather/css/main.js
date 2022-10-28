@@ -8,7 +8,7 @@ $(".temp").each(function(i) {
     var temp = getCurrentTemp(cityList[i]);
     console.log(temp)
     var iconURL = "https://openweathermap.org/img/wn/";
-    $(this).text(temp.celsisu + "℃");
+    $(this).text(temp.celsius + "℃");
     $(this).prev().children().attr("src", iconURL + temp.icon + ".png");
 });
 

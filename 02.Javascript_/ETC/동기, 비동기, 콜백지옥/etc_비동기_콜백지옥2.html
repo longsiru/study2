@@ -15,16 +15,29 @@
 
         /* 콜백함수2 */
         //콜백함수 선언
-        // function add(x, callback) {
-        //     let sum = x + x;
-        //     console.log(sum);
-        //     callback(sum);
-        // }
+        function add(x, callback) {
+            let sum = x + x;
+            console.log(sum);
+            callback(sum);
+        }
 
-        // add(2, res=>{
-        //     console.log('finish: ' + res);
-        // });
+        add(2, res=>{
+            console.log('finish: ' + res);
+        });  //2 finish:4
+       
 
+        /* function add(x, callback) {
+            let sum = x + x;
+            console.log(sum);
+            callback(sum);
+        }
+
+        add(2, res=>{
+            console.log('finish: ' + res);
+        });
+        add(2, res=>{
+            console.log('finish: ' + res);
+        });  //4 finish:4  4 finish:4 */
 
         /* 콜백 지옥 */
 
