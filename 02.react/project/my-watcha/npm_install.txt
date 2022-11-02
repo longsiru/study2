@@ -1,0 +1,10 @@
+npm i react-router-dom
+npm i react-icons
+npm i styled-component
+
+npm i axios
+npm i redux react-redux redux-saga redux-devtools-extension redux-actions redux-logger
+
+npm i react-icons
+npm i @mui/material
+npm i @emotion/react @emotion/styled
